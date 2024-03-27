@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Music Player</title>
+    <script src="https://kit.fontawesome.com/22596b4c53.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <img src="/Images/1.jpg" class="song-img" id="songImg">
+            <h1> </h1>
+            <p> </p>
+
+            <audio id="song">
+                <source src="/durood-sharif.mp3" type="audio/mpeg">
+                <source src="/baap-di-shan.mp3" type="audio/mpeg">
+            </audio>
+            <input type="range" value="0" id="progress">
+
+
+            <div class="controls">
+                <div onclick="playPrev()"><i class="fa-solid fa-backward"></i></div>
+                <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+                <div onclick="playNext()"><i class="fa-solid fa-forward"></i></div>
+            </div>
+
+            <div class="social">
+                <h4> <a href="https://www.linkedin.com/in/saad-sultan-aa4925219/">linkedIn <span> Profile</span></a></h4>
+                <h4> <a href="https://github.com/saadsultan482">GitHub <span> Profile</span></a></h4>
+            </div>
+
+
+
+            <script src="/script.js">
+
+            </script>
+</body>
+
+</html>
